@@ -7,17 +7,17 @@ import snw.jkook.config.file.YamlConfiguration;
 import java.io.File;
 import java.io.IOException;
 
-public class defConfigs {
+public class DefConfigs {
     String fileName = "configs.yml";
     FileConfiguration config;
     File file;
 
-    private static defConfigs instance = new defConfigs();
+    private static DefConfigs instance = new DefConfigs();
 
-    public defConfigs() {
+    public DefConfigs() {
     }
 
-    public static defConfigs getInstance() {
+    public static DefConfigs getInstance() {
         return instance;
     }
 
@@ -167,6 +167,6 @@ public class defConfigs {
                 Core.plugin.getLogger().error("无法创建文件：" + this.fileName);
             }
         }
-
     }
+
 }

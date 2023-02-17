@@ -1,5 +1,6 @@
 package org.liangzi.entity;
 
+import org.liangzi.Core;
 import snw.jkook.entity.Guild;
 import snw.jkook.entity.Role;
 import snw.jkook.entity.User;
@@ -21,14 +22,20 @@ public class Ticket {
     TextChannel textChannel;
     Guild guild;
 
-    public Ticket(int num){
-        this.ticket_num = num;
+    private Ticket(){
     }
-    public Ticket(int num,Category category,User user){
+
+    public Ticket(int num, Category category, User user){
         this.ticket_num = num;
         this.category = category;
         this.user = user;
         this.guild = category.getGuild();
+        createTicket();
+        Core.ticket_list.add(this);
+    }
+
+    public int getTicket_num() {
+        return ticket_num;
     }
 
     public Category getCategory() {
