@@ -30,7 +30,7 @@ public class UserReact implements Listener {
         if("config.msg_id".equals(msg_id)) {
             Ticket ticket = new Ticket(ticket_num,category,user);
             ticket.createTicket();
-            //TODO：向配置文件储存ticket_num
+            //TODO：向配置文件储存 ticket_num
 
             ticket_num++;
         }

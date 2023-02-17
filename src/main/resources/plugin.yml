@@ -1,0 +1,5 @@
+name: MiaoZiBot
+version: 0.1.0
+authors: ["liangzi"]
+main: org.liangzi.Core
+api-version: 0.48.2

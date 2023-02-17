@@ -1,5 +1,6 @@
 package org.liangzi;
 
+import org.liangzi.listener.UserReact;
 import snw.jkook.JKook;
 import snw.jkook.plugin.BasePlugin;
 
@@ -19,7 +20,7 @@ public class Core extends BasePlugin {
 
         getLogger().info("Jook-ticket 启动成功");
 
-//        JKook.getCore().getEventManager().registerHandlers(this, new UserReact());
+        JKook.getCore().getEventManager().registerHandlers(this, new UserReact());
     }
 
     @Override

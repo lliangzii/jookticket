@@ -1,4 +1,4 @@
-package org.liangzi.tools;
+package org.liangzi.configs;
 
 import org.liangzi.Core;
 import snw.jkook.config.file.FileConfiguration;
@@ -7,17 +7,17 @@ import snw.jkook.config.file.YamlConfiguration;
 import java.io.File;
 import java.io.IOException;
 
-public class Configs {
+public class defConfigs {
     String fileName = "configs.yml";
     FileConfiguration config;
     File file;
 
-    private static Configs instance = new Configs();
+    private static defConfigs instance = new defConfigs();
 
-    public Configs() {
+    public defConfigs() {
     }
 
-    public static Configs getInstance() {
+    public static defConfigs getInstance() {
         return instance;
     }
 

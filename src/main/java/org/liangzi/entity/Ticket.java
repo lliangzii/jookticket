@@ -67,7 +67,7 @@ public class Ticket {
         //创建Ticket频道
         this.textChannel = guild.createTextChannel("Ticket-"+ticket_num,category);
 
-        //TODO 设置权限：仅 "TicketUser"（角色）可见Ticket频道
+        //设置权限：仅 "TicketUser"（角色）可见Ticket频道
         textChannel.updatePermission(0,0,2048);
         textChannel.updatePermission(role,6144,0);
 
